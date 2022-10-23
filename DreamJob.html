@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-image :url("image/kotak.jpg");
+  padding: 20px;
+  text-align: center;
+  color: #E57373;
+
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #F5B7B1 ;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #F5B7B1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: palevioletred;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  padding: 15px;
+  color: #C39BD3;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 90%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>MY DREAM JOB</h1>
+  <p>3 Pekerjaan yang saya impikan</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Web Developer</h2>
+    <center>
+    <img src="image/webdev.jpg"  style="width:40%">
+  </center>
+    <p>Web developer adalah seorang programmer yang membuat program dan aplikasi untuk world wide web. Seorang web developer tahu bagaimana cara membuat website dari nol, membuat kode custom jika memang Anda membutuhkan fitur khusus di website Anda, mengembangkan semua mulai dari layout website sampai fitur dan fungsi websitenya. Mungkin dapat dikatakan, web developer bisa dibilang sebagai seseorang yang bertanggung jawab untuk membuat dan mengelola website. Tetapi kalau Anda bahas lebih dalam lagi tentang developer, Anda akan tahu bahwa pekerjaan web developer ini bisa dibilang luas. </p>
+  </div>
+  
+  <div class="column">
+    <h2>Product Manager</h2>
+    <center>
+    <img src="image/prodman.jpg"  style="width:40%">
+  </center>
+    <p>Profesi Product Manager bertugas menghasilkan suatu produk dengan kualitas yang baik, dan mampu menerjemahkan the right product. Seorang product manager harus mampu membuat relevant product yang sesuai dengan masalah yang dihadapi oleh user. Bisa dikatakan jika posisi ini yang mengelola produk dan apapun yang berkaitan dengan sebuah produk. Jadi mulai dari proses ideasi, eksekusi ide, hingga operasional produk akan menjadi tanggungan jawab product manager.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Data Eingeneer</h2>
+    <center>
+    <img src="image/daten.jpg"  style="width:40%">
+  </center>
+    <p>Data engineer adalah profesi yang bertugas untuk mendesain dan membangun sistem yang nantinya digunakan untuk mengumpulkan dan menganalisa data. Umumnya, data yang dikumpulkan dan dikelola nantinya akan ditafsirkan secara lebih jauh oleh data analyst dan data scientist. Tujuan akhirnya adalah untuk menyajikan informasi yang berguna untuk bisnis. Sehingga, jajaran manajemen bisa mengambil keputusan yang bisa dipercaya dan berbasis data.</p>
+  </div>
+</div>
+
+</body>
+</html>
